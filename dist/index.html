@@ -26,12 +26,12 @@
                 <li class="nav-item current">
                     <a href="/" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="/about.html" class="nav-link">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a href="/work.html" class="nav-link">My Work</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a href="/contact.html" class="nav-link">Get in touch</a>
                 </li>
@@ -39,11 +39,8 @@
         </nav>
     </header>
     <main id="home">
-        <h1 class="lg-heading">
-            Raneesh 
-            <span class="text-secondary">Gomez</span>
-        </h1>
-        <h2 class="sm-heading">Web Developer, Programmer & Photographer</h2>
+        <h1 class="lg-heading">Hi, I'm Raneesh<span class="text-secondary"> Gomez</span></h1>
+        <h2 class="sm-heading"></h2>
         <div class="icons">
             <a href="#!">
                 <i class="fab fa-twitter fa-2x"></i>
@@ -58,8 +55,34 @@
                     <i class="fab fa-github fa-2x"></i>
             </a>
         </div>
+        <button class="cv-btn"> 
+                <a href="/dist/assets/raneesh-gomez-cv.pdf" download>
+                    <h3>
+                        Download Resume&nbsp;&nbsp;
+                        <img src="img/download.png">
+                    </h3>
+                </a>
+        </button>
     </main>
-
+    
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+        var options = {
+            strings: [ 
+            "I am a <span class=\"text-secondary\">Web Developer</span>",
+            "I am a <span class=\"text-secondary\">Software Engineer</span>",
+            "I am a <span class=\"text-secondary\">Photographer</span>",
+            "I am a <span class=\"text-secondary\">Singer/Beatboxer</span>"
+            ],
+            typeSpeed: 30,
+            backSpeed: 30,
+            loop: true,
+            cursorChar: '',
+            smartBackspace: true
+        }
+            
+        var typed = new Typed(".sm-heading", options);
+    </script>
 </body>
 </html>
