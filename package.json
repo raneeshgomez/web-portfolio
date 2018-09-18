@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Responsive Portfolio Website",
   "main": "index.js",
+  "homepage": "https://raneeshgomez.github.io/web-portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "start": "",
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Raneesh Gomez",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.9.3"
   }
 }
