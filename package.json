@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://raneeshgomez.github.io/web-portfolio",
   "scripts": {
-    "start": "",
+    "start": "node server.js",
     "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist"
   },
